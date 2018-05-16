@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		124B264920AB28DB005792AE /* ThreePointGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124B264820AB28DB005792AE /* ThreePointGradient.swift */; };
+		124B264B20AC51BC005792AE /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124B264A20AC51BC005792AE /* DesignableView.swift */; };
 		12D43D82208E1C6D0071F77E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D43D81208E1C6D0071F77E /* AppDelegate.swift */; };
 		12D43D84208E1C6D0071F77E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D43D83208E1C6D0071F77E /* ViewController.swift */; };
 		12D43D87208E1C6D0071F77E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D43D85208E1C6D0071F77E /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		124B264820AB28DB005792AE /* ThreePointGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreePointGradient.swift; sourceTree = "<group>"; };
+		124B264A20AC51BC005792AE /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		12D43D7E208E1C6D0071F77E /* User_Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = User_Management.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D43D81208E1C6D0071F77E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12D43D83208E1C6D0071F77E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				124B264820AB28DB005792AE /* ThreePointGradient.swift */,
+				124B264A20AC51BC005792AE /* DesignableView.swift */,
 			);
 			path = IBDesignables;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124B264B20AC51BC005792AE /* DesignableView.swift in Sources */,
 				12D43D84208E1C6D0071F77E /* ViewController.swift in Sources */,
 				12D43D82208E1C6D0071F77E /* AppDelegate.swift in Sources */,
 				124B264920AB28DB005792AE /* ThreePointGradient.swift in Sources */,
