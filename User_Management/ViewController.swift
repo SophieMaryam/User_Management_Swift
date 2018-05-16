@@ -40,6 +40,7 @@ class ViewController: UIViewController {
                 self.shineView.transform = CGAffineTransform(translationX: 0, y:-800)
         }, completion: { (success) in
             self.hideLoadingScreen()
+            sleep(2)
             
         })
     }
