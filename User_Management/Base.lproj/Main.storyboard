@@ -120,7 +120,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="6xf-og-0qZ" customClass="ThreePointGradientView" customModule="User_Management" customModuleProvider="target">
+                <view clipsSubviews="YES" contentMode="scaleToFill" id="6xf-og-0qZ" customClass="ThreePointGradientView" customModule="User_Management" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="405" height="701"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>

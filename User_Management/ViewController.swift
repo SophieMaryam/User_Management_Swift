@@ -29,12 +29,29 @@ class ViewController: UIViewController {
         view.addSubview(loadingView)
         
         UIView.animate(withDuration: 0.3, delay: 0.5, options: [], animations: {            self.loadingView.alpha = 1}) {
-            (success) in UIView.animate(withDuration: 1, delay: 0.2, options: [], animations:
-                {
-                    self.shineView.transform = CGAffineTransform(translationX: 0, y:-800)
-            }, completion: { (success) in
-                
+            (success) in
+                self.animateShineView()
+        }
+    }
+    
+    func animateShineView(){
+        UIView.animate(withDuration: 1, delay: 0.2, options: [], animations:
+            {
+                self.shineView.transform = CGAffineTransform(translationX: 0, y:-800)
+        }, completion: { (success) in
+            self.hideLoadingScreen()
+            
+        })
+    }
+    
+    func hideLoadingScreen(){
+        UIView.animate(withDuration: 0.1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
+            self.loadingView.transform = CGAffineTransform(translationX: 0, y: 10)
+        }) { (success) in
+            UIView.animate(withDuration: 0.3, animations: {
+                self.loadingView.transform = CGAffineTransform(translationX: 0, y: -800)
             })
+            
         }
     }
 
