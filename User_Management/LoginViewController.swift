@@ -18,6 +18,14 @@ class LoginViewController: UIViewController {
     @IBAction func dismissPopup(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
+    
 
-
+    @IBAction func loginButton(_ sender: UIButton) {
+        // Login logic
+        
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
 }
