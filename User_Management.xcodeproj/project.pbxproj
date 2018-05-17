@@ -10,6 +10,8 @@
 		124B264920AB28DB005792AE /* ThreePointGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124B264820AB28DB005792AE /* ThreePointGradient.swift */; };
 		124B264B20AC51BC005792AE /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124B264A20AC51BC005792AE /* DesignableView.swift */; };
 		1286275020AC5AEB001602B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1286274F20AC5AEB001602B6 /* LoginViewController.swift */; };
+		1286275520AD7A38001602B6 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1286275420AD7A38001602B6 /* BounceButton.swift */; };
+		1286275720AD7D11001602B6 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1286275620AD7D11001602B6 /* DesignableButton.swift */; };
 		12D43D82208E1C6D0071F77E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D43D81208E1C6D0071F77E /* AppDelegate.swift */; };
 		12D43D84208E1C6D0071F77E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D43D83208E1C6D0071F77E /* ViewController.swift */; };
 		12D43D87208E1C6D0071F77E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D43D85208E1C6D0071F77E /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 		124B264820AB28DB005792AE /* ThreePointGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreePointGradient.swift; sourceTree = "<group>"; };
 		124B264A20AC51BC005792AE /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		1286274F20AC5AEB001602B6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1286275420AD7A38001602B6 /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
+		1286275620AD7D11001602B6 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		12D43D7E208E1C6D0071F77E /* User_Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = User_Management.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D43D81208E1C6D0071F77E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12D43D83208E1C6D0071F77E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,8 +50,17 @@
 			children = (
 				124B264820AB28DB005792AE /* ThreePointGradient.swift */,
 				124B264A20AC51BC005792AE /* DesignableView.swift */,
+				1286275620AD7D11001602B6 /* DesignableButton.swift */,
 			);
 			path = IBDesignables;
+			sourceTree = "<group>";
+		};
+		1286275320AD7A04001602B6 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				1286275420AD7A38001602B6 /* BounceButton.swift */,
+			);
+			path = CustomControls;
 			sourceTree = "<group>";
 		};
 		12D43D75208E1C6D0071F77E = {
@@ -69,6 +82,7 @@
 		12D43D80208E1C6D0071F77E /* User_Management */ = {
 			isa = PBXGroup;
 			children = (
+				1286275320AD7A04001602B6 /* CustomControls */,
 				124B264720AB28A2005792AE /* IBDesignables */,
 				12D43D81208E1C6D0071F77E /* AppDelegate.swift */,
 				12D43D83208E1C6D0071F77E /* ViewController.swift */,
@@ -155,9 +169,11 @@
 			files = (
 				124B264B20AC51BC005792AE /* DesignableView.swift in Sources */,
 				12D43D84208E1C6D0071F77E /* ViewController.swift in Sources */,
+				1286275720AD7D11001602B6 /* DesignableButton.swift in Sources */,
 				12D43D82208E1C6D0071F77E /* AppDelegate.swift in Sources */,
 				1286275020AC5AEB001602B6 /* LoginViewController.swift in Sources */,
 				124B264920AB28DB005792AE /* ThreePointGradient.swift in Sources */,
+				1286275520AD7A38001602B6 /* BounceButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

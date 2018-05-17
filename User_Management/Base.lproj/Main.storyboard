@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJM-5u-NFn">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJM-5u-NFn" customClass="DesignableButton" customModule="User_Management" customModuleProvider="target">
                                 <rect key="frame" x="22" y="487" width="143" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,7 +47,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRa-1Z-290">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRa-1Z-290" customClass="DesignableButton" customModule="User_Management" customModuleProvider="target">
                                 <rect key="frame" x="210" y="487" width="143" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.50029430650684936" colorSpace="custom" customColorSpace="sRGB"/>
@@ -140,7 +140,7 @@
                                     </connections>
                                 </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4j-CV-ycW" userLabel="Popup" customClass="DesignableView" customModule="User_Management" customModuleProvider="target">
-                                    <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                    <rect key="frame" x="67.5" y="178.5" width="240" height="240"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5ly-85-Txf">
                                             <rect key="frame" x="30" y="53" width="180" height="162.5"/>
@@ -161,7 +161,7 @@
                                                     <rect key="frame" x="0.0" y="43" width="180" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" textContentType="email"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK9-zY-8vK">
                                                     <rect key="frame" x="0.0" y="77" width="180" height="17.5"/>
@@ -173,7 +173,7 @@
                                                     <rect key="frame" x="0.0" y="98.5" width="180" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcL-v3-JMt">
                                                     <rect key="frame" x="0.0" y="132.5" width="180" height="30"/>
@@ -204,7 +204,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcL-Yj-TM1" customClass="DesignableView" customModule="User_Management" customModuleProvider="target">
-                                    <rect key="frame" x="137.5" y="166.5" width="100" height="100"/>
+                                    <rect key="frame" x="137.5" y="131.5" width="100" height="100"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="key" translatesAutoresizingMaskIntoConstraints="NO" id="KdZ-sz-1cI">
                                             <rect key="frame" x="20" y="15" width="61" height="64"/>
@@ -229,12 +229,15 @@
                             <constraints>
                                 <constraint firstItem="mcL-Yj-TM1" firstAttribute="centerX" secondItem="rBY-XL-dmE" secondAttribute="centerX" id="eIk-uh-Sd6"/>
                                 <constraint firstItem="Q4j-CV-ycW" firstAttribute="top" secondItem="mcL-Yj-TM1" secondAttribute="bottom" constant="-52.5" id="n3p-5i-ZeY"/>
-                                <constraint firstItem="Q4j-CV-ycW" firstAttribute="centerY" secondItem="rBY-XL-dmE" secondAttribute="centerY" id="nXG-4U-NkB"/>
+                                <constraint firstItem="Q4j-CV-ycW" firstAttribute="centerY" secondItem="rBY-XL-dmE" secondAttribute="centerY" constant="-35" id="nXG-4U-NkB"/>
                                 <constraint firstItem="Q4j-CV-ycW" firstAttribute="centerX" secondItem="rBY-XL-dmE" secondAttribute="centerX" id="uAs-eT-RrT"/>
                             </constraints>
                         </view>
                         <blurEffect style="extraLight"/>
                     </visualEffectView>
+                    <connections>
+                        <outlet property="passwordTextfield" destination="P1t-JY-OzE" id="177-Kf-JFa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWI-Q9-cyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
