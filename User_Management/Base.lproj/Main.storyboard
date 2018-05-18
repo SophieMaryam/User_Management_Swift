@@ -23,54 +23,99 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJM-5u-NFn" customClass="DesignableButton" customModule="User_Management" customModuleProvider="target">
-                                <rect key="frame" x="22" y="487" width="143" height="57"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lightning" translatesAutoresizingMaskIntoConstraints="NO" id="QnJ-HO-bnP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJM-5u-NFn" customClass="DesignableButton" customModule="User_Management" customModuleProvider="target">
+                                <rect key="frame" x="30" y="579" width="135" height="58"/>
+                                <color key="backgroundColor" red="0.48073315230000002" green="0.48073315230000002" blue="0.48073315230000002" alpha="0.716796875" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="iHI-At-zTe"/>
+                                    <constraint firstAttribute="height" constant="58" id="ifw-xw-hrt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="22"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="fzF-YW-iQK" kind="presentation" id="Jx3-rx-6c8"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yew-E5-TwG">
-                                <rect key="frame" x="22" y="248" width="331" height="171"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.68372752568493156" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Yew-E5-TwG">
+                                <rect key="frame" x="30" y="346" width="315" height="183"/>
+                                <color key="backgroundColor" red="0.48073315227092217" green="0.48073315227092217" blue="0.48073315227092217" alpha="0.71679687500000011" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="171" id="HW1-C3-HhF"/>
-                                    <constraint firstAttribute="width" constant="331" id="Vmr-ia-7dW"/>
+                                    <constraint firstAttribute="width" constant="315" id="GPM-DM-epB"/>
+                                    <constraint firstAttribute="height" constant="183" id="Loa-ss-yGY"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRa-1Z-290" customClass="DesignableButton" customModule="User_Management" customModuleProvider="target">
-                                <rect key="frame" x="210" y="487" width="143" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.50029430650684936" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRa-1Z-290" customClass="DesignableButton" customModule="User_Management" customModuleProvider="target">
+                                <rect key="frame" x="210" y="579" width="135" height="58"/>
+                                <color key="backgroundColor" red="0.48073315230000002" green="0.48073315230000002" blue="0.48073315230000002" alpha="0.716796875" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="8og-jB-aEU"/>
+                                    <constraint firstAttribute="width" constant="135" id="AnA-NU-owz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="22"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="Kum-tF-Bic" kind="presentation" id="62U-Ko-n35"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHV-1G-LUM">
-                                <rect key="frame" x="81" y="41" width="212" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHV-1G-LUM">
+                                <rect key="frame" x="0.0" y="70" width="375" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="R9x-GQ-gfN"/>
+                                    <constraint firstAttribute="width" constant="375" id="oy4-4x-TSi"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="5" height="-3"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Yew-E5-TwG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CP7-oo-rlp"/>
-                            <constraint firstItem="Yew-E5-TwG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sTt-at-rFN"/>
+                            <constraint firstItem="zHV-1G-LUM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="00S-Qh-66X"/>
+                            <constraint firstItem="zHV-1G-LUM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5xU-3m-1Hb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SJM-5u-NFn" secondAttribute="bottom" constant="30" id="Jf4-SG-k4o"/>
+                            <constraint firstItem="Yew-E5-TwG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Nef-mN-6JW"/>
+                            <constraint firstItem="zHV-1G-LUM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nkn-VM-yYi"/>
+                            <constraint firstItem="SJM-5u-NFn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="SoM-7H-xTN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yew-E5-TwG" secondAttribute="trailing" constant="30" id="ank-gC-Kop"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dRa-1Z-290" secondAttribute="trailing" constant="30" id="d6B-7G-Hdb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dRa-1Z-290" secondAttribute="bottom" constant="30" id="dFf-sy-ESX"/>
+                            <constraint firstItem="zHV-1G-LUM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="qQc-Pp-ffN"/>
+                            <constraint firstItem="SJM-5u-NFn" firstAttribute="top" secondItem="Yew-E5-TwG" secondAttribute="bottom" constant="50" id="zcQ-4x-9jt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -107,25 +152,32 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GameCor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Eo-AT-63t">
-                            <rect key="frame" x="106" y="292" width="192" height="75"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GameCor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Eo-AT-63t">
+                            <rect key="frame" x="106" y="313" width="192" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="0X7-8e-0Db"/>
+                                <constraint firstAttribute="width" constant="192" id="fuN-3a-QVX"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="40"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3Eo-AT-63t" firstAttribute="centerY" secondItem="6xf-og-0qZ" secondAttribute="centerY" id="B11-Yb-iEc"/>
+                        <constraint firstItem="3Eo-AT-63t" firstAttribute="centerX" secondItem="6xf-og-0qZ" secondAttribute="centerX" id="P9z-lM-Nwi"/>
+                    </constraints>
                     <viewLayoutGuide key="safeArea" id="BLF-EJ-Lxr"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="815.20000000000005" y="133.5832083958021"/>
+            <point key="canvasLocation" x="813.60000000000002" y="132.68365817091455"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="D92-Hn-t2J">
             <objects>
                 <viewController id="fzF-YW-iQK" customClass="LoginViewController" customModule="User_Management" customModuleProvider="target" sceneMemberID="viewController">
-                    <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="dy4-5g-HB7">
+                    <visualEffectView key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" id="dy4-5g-HB7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rBY-XL-dmE">
@@ -233,7 +285,7 @@
                                 <constraint firstItem="Q4j-CV-ycW" firstAttribute="centerX" secondItem="rBY-XL-dmE" secondAttribute="centerX" id="uAs-eT-RrT"/>
                             </constraints>
                         </view>
-                        <blurEffect style="extraLight"/>
+                        <blurEffect style="light"/>
                     </visualEffectView>
                     <connections>
                         <outlet property="passwordTextfield" destination="P1t-JY-OzE" id="177-Kf-JFa"/>
@@ -372,5 +424,6 @@
     </scenes>
     <resources>
         <image name="key" width="512" height="512"/>
+        <image name="lightning" width="500" height="734"/>
     </resources>
 </document>
